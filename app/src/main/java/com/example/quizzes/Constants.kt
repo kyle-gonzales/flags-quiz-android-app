@@ -2,6 +2,13 @@ package com.example.quizzes
 
 object Constants {
 
+    // whenever you send data from one activity to another, it's good to store the name under which you stored the details that you want to have. It's good to put those values in a constant
+
+    const val USER_NAME : String = "user_name"
+    const val TOTAL_QUESTIONS: String = "total_questions"
+    const val CORRECT_ANSWERS : String = "correct_answers"
+
+
     fun getQuestions(): ArrayList<Question> {
         val questions = ArrayList<Question>()
 
@@ -85,7 +92,7 @@ object Constants {
         val question8 = Question(
             8,
             R.drawable.ic_flag_of_fiji,
-            "Fiji",
+            "Your mom",
             "England",
             "Fiji",
             "Austria",

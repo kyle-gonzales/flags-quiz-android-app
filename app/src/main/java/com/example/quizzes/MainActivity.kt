@@ -21,6 +21,9 @@ class MainActivity : AppCompatActivity() {
             } else {
                 // move to another screen (aka another activity)
                 val intent = Intent(this, QuizQuestionsActivity::class.java)
+                intent.putExtra(Constants.USER_NAME, editTextName.text.toString()) //an intent can have extra information that you send from one activity to another, which the other activity can retrieve and use
+                // the data is sent to the activity you are starting with intent
+                // Constants.USER_NAME is the variable name of the object being sent; this is the name that is called when getting the value from the intent Activity
                 startActivity(intent)
                 finish()
             }
